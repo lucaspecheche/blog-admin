@@ -56,9 +56,9 @@ body, html, nav, footer {
   align-items: center;
   background: none;
   cursor: pointer;
-  background-color: #fafbfd;
-  border-left: 1px solid #f1f3fa;
-  border-right: 1px solid #f1f3fa;
+  background-color: transparent; /*#fafbfd*/
+  border-left: 2px solid #f1f3fa;
+  border-right: 2px solid #f1f3fa;
 
 }
 

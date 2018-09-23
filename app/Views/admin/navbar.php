@@ -24,7 +24,7 @@
 				<div class="dropdown-menu dpm-content" aria-labelledby="dropdownMenuButton" >
 					<a class="dropdown-item" href="#">Minha Conta</a>
 					<div class="dropdown-divider"></div>
-					<a class="dropdown-item" href="#">Sair</a>
+					<a class="dropdown-item" href="index.php?action=sair">Sair</a>
 				 </div>
 				</div>
   			</div>

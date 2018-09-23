@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel='shortcut icon' type='image/x-icon' href='img/favicon.ico' />
+		<title>Testando Firebase</title>
+		
+		<!-- Includes CSS -->
+		<link rel="stylesheet" href="public/css/bootstrap.min.css">
+		<link rel="stylesheet" href="public/css/fontawesome-free-5.2.0-web/css/all.min.css">
+		<link rel="stylesheet" href="public/css/font_Montserrat.css">
+		<link rel="stylesheet" href="public/css/login_register.css">
+	</head>
+	<body>
+		<div id="wrapper" class="center-wrapper">
+			<div class="border-full">
+		
+				<header id="display-option">
+
+					<div id="option-login" class="login login-selected">
+						<i class="fas fa-fingerprint"></i>
+						<span>Login</span>
+					</div>
+
+					<div id="option-register" class="register register-not-selected">
+						<i class="fas fa-user-plus"></i>
+						<span>Registrar</span>
+					</div>
+					
+				</header>
+
+				<!--<hr class="divider-gradient">-->
+				<div class="content">
+					<!-- Sessão de ERROS -->
+					<section>
+						<div class="display-errors"></div>
+					</section>
+
+					<!-- Sessão de Formularios -->
+					<section>
+						<form method="post" action="index.php">
+
+							<input type="text" name="action" class="hidden" value="login">
+
+							<!--Input NAME -->
+							<div id="form-name" class="form-group status hidden">
+								<label>Nome</label>
+
+								<div class="input-group input-name">
+							        <div class="input-group-prepend">
+							        	<div class="input-group-text"><i class="fas fa-id-card"></i></div>
+							        </div>
+							        <input type="text" class="form-control" id="name" name="name" placeholder="Informe seu nome">
+							    </div>
+							</div>
+
+							<!-- Input EMAIL -->
+							<div id="form-email" class="form-group">
+								<label>Email</label>
+
+								<div class="input-group input-email">
+							        <div class="input-group-prepend">
+							        	<div class="input-group-text"><i class="fas fa-at"></i></div>
+							        </div>
+							        <input type="email" class="form-control" id="email" name="email" aria-describedby="email" placeholder="Informe seu email">
+							    </div>
+							</div>
+
+							<!--Input PASSWORD -->
+							<div id="form-password" class="form-group">
+								<label>Senha</label>
+
+								<div class="input-group input-password">
+							        <div class="input-group-prepend">
+							        	<div class="input-group-text"><i class="fas fa-key"></i></div>
+							        </div>
+							        <input type="password" class="form-control" id="senha" name="password" placeholder="Informe sua senha">
+							        <span class="icon-right pass-view"><span id="divi"></span><i class="far fa-eye"></i></span>
+							    </div>
+								<small class="form-text recovery-pass status"><a href="" >Esqueci minha senha</a></small>
+							</div>
+
+							<!-- INPUT COMFIRME PASSWORD -->
+							<div id="form-confirm-password" class="form-group status hidden">
+								<label>Confirme sua senha</label>
+
+								<div class="input-group input-password">
+							        <div class="input-group-prepend">
+							        	<div class="input-group-text"><i class="fas fa-key"></i></div>
+							        </div>
+							        <input type="password" class="form-control" id="confirm-senha" name="confirm-password" placeholder="Confirme sua senha">
+							        <span class="icon-right pass-view"><span></span><i class="far fa-eye"></i></span>
+							    </div>
+							</div>
+
+							<!-- Input CHECKBOX -->
+							<div class="custom-control custom-checkbox status">
+								<input type="checkbox" class="custom-control-input" id="customCheck1">
+								<label class="custom-control-label" for="customCheck1">Manter-me conectado</label>
+							</div>
+
+							<!-- Botão ENTRAR -->
+							<button id="btn-login" type="submit" class="btn btn-primary btn-block status">
+								<i class="fas fa-sign-in-alt"></i><strong>Entrar</strong>
+							</button>
+							<!-- Botão Registrar -->
+							<button id="btn-register" type="button" class="btn btn-primary btn-block status hidden">
+								<i class="fas fa-user-plus"></i><strong>Registrar-me</strong>
+							</button>
+
+						</form>
+					</section>
+
+					<!-- Divisoria, OU LOGAR COM -->
+					<div class="divisa-botoes">
+						<i class="divider"></i>
+						<span>Ou, entrar com</span>
+						<i class="divider"></i>
+					</div>
+					<!-- Sessão de métodos de entrada -->
+					<section id="methods-input">
+						<button id="btn-facebook" class="btn btn-facebook"><i class="fab fa-facebook"></i>Facebook</button>
+						<button id="btn-google" class="btn btn-google"><i class="fab fa-google"></i>Google</button>
+					</section>
+
+					
+
+				</div> <!-- FIM Content -->
+			</div>
+		</div>
+
+		<!-- Includes Scripts -->
+		<script src="public/js/jquery.min.js"></script>
+		<script src="public/js/validations.js"></script>
+	</body>
+</html>

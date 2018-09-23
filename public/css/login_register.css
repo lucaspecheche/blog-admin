@@ -1,0 +1,295 @@
+html, body {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 0.9rem;
+}
+
+
+/** Configuração de > 576 **/
+@media screen and (min-width: 576px) {
+  body {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    height: 100%;
+    background-color: #ffffff;
+    background-image: url("../img/overlay.png"), linear-gradient(to bottom, rgba(0,0,0,0.09) 0%,rgba(0,0,0,0.09) 50%), url("../img/bg.jpg"); /*rawpixel-558599-unsplash*/
+    background-repeat: repeat, no-repeat, no-repeat;
+    background-size: cover;
+    background-position: top left, center center, bottom center;
+    background-attachment: fixed, fixed, fixed;
+}
+
+  #wrapper {
+    width: 450px;
+    padding: 5px;
+  	border: 1px solid #d3d3d3;
+  	border-radius: 5px;
+  	background-color: #fafafa;
+  	-webkit-box-shadow: 2px 2px 25px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 2px 25px 0px rgba(0,0,0,0.75);
+    box-shadow: 2px 2px 25px 0px rgba(0,0,0,0.75);
+
+  }
+
+  .center-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .border-full {
+    border: 1px solid #C2C7D0;
+  }
+
+}
+
+@media screen and (max-width: 576px) {
+
+  body {
+    display: block;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0; 
+    background-color: #FFF;
+  }
+
+  #wrapper {
+    min-width: 320px;
+    padding: 0;
+  }
+
+  .border-full {
+    border: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #wrapper {
+    width: 500px;
+  }
+}
+
+.content {
+  background-color: #fff;
+  padding: 0 20px 20px 20px;
+}
+
+/****** ******Seleção Login/Register *************/
+
+#display-option {
+	display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  padding: 0px 0 35px 0;
+  background-color: #fff;
+}
+
+#display-option .login {
+  flex-basis: 50%;
+  padding: 20px 0;
+}
+
+#display-option .register {
+  flex-basis: 49.9%;
+  padding: 20px 0;
+}
+
+#display-option .login-selected {
+  color: #444;
+  background: #fff;
+}
+
+#display-option .register-not-selected {
+  color: #979faf;
+  background: #f9f9f9;
+  border-bottom: 1px solid #C2C7D0;
+  border-left: 1px solid #C2C7D0;
+  -webkit-box-shadow: inset 2px -2px 8px -1px rgba(194,199,208,1);
+  -moz-box-shadow: inset 2px -2px 8px -1px rgba(194,199,208,1);
+  box-shadow: inset 2px -2px 8px -1px rgba(194,199,208,1);
+  cursor: pointer;
+}
+
+#display-option .register-selected {
+  color: #444;
+  background: #fff;
+}
+
+#display-option .login-not-selected {
+  color: #979faf;
+  background: #f9f9f9;
+  border-bottom: 1px solid #C2C7D0;
+  border-right: 1px solid #C2C7D0;
+  -webkit-box-shadow: inset 2px -2px 8px -1px rgba(194,199,208,1);
+  -moz-box-shadow: inset 2px -2px 8px -1px rgba(194,199,208,1);
+  box-shadow: inset -2px -2px 8px -1px rgba(194,199,208,1);
+  cursor: pointer;
+}
+
+#display-option span, #display-option i {
+	font-size: 1.2rem;
+	font-weight: 600;
+	vertical-align: middle;
+  padding-left: 10px;
+}
+
+/************* Divisão _____ TEXT ______ *****************/
+
+.divider-gradient {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+.divisa-botoes {
+	display:flex;
+	flex-direction:row;
+	align-items: center;
+  padding: 10px 0;
+}
+
+.divisa-botoes .divider {
+  flex-grow: 1;
+  height: 1px;
+  border: 0;
+  background: rgba(0,0,0,.2);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.divisa-botoes span {
+	flex-grow: 0;
+	padding: 0 15px 0 15px;
+  font-weight: 600;
+}
+
+
+/**************** ICONES A DIREITA e SOB o INPUT ****************/
+.icon-right {
+  position: absolute;   
+  top: 0; 
+  right: 0;
+  background: none;
+  border: none;
+  padding: 8px 10px;
+  z-index: 1000; 
+}
+
+.pass-view {
+  color: #3c3c3c;
+  cursor: pointer;
+}
+
+.pass-view span { /** Divisória **/
+  margin-right: 10px;
+  border-left: 1px solid #BDBDBD;
+}
+
+/************** Esqueci minha Senha *****************/
+
+small.recovery-pass {
+  float: right;
+  padding-top: 5px;
+}
+
+small.recovery-pass a {
+  text-decoration: none;
+  font-size: .85rem;
+}
+
+/************ Checkbox Relembrar-me ***************/
+
+.custom-checkbox {
+  margin: 25px 0 15px 0;
+}
+
+.custom-checkbox label {
+  padding-top: 2px;
+}
+
+.custom-checkbox label::before {
+  top: .25rem;
+}
+
+/***************** Botões de métodos de entradas *****************/
+
+#methods-input {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+#methods-input .btn-google {
+  width: 48%;
+  font-weight: 600;
+  color: #fff;
+  background-color: #f32e06;
+  border-color: #f32e06;
+}
+
+#methods-input .btn-facebook {
+  width: 48%;
+  font-weight: 600;
+  color: #fff;
+  background-color: #4e6cab;
+  border-color: #4e6cab;
+}
+
+/******************* Configurações Gerais *********************/
+
+.hidden {
+  display: none;
+}
+
+.form-group label {
+  font-weight: 600;
+}
+
+button i {
+  padding: 0 10px;
+}
+
+/********** Animação FADEIN **************/
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
